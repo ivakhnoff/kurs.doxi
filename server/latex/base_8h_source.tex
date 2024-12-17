@@ -1,0 +1,36 @@
+\hypertarget{base_8h_source}{}\doxysection{base.\+h}
+\mbox{\hyperlink{base_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{classbase}{base}}}
+\DoxyCodeLine{17 \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     std::map<std::string, std::string> \mbox{\hyperlink{classbase_a1af1c56b50837e0b21da61303f22a7c1}{data\_base}}; }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{classbase_ac48bcfe44d4d71c5110c501559b08fe2}{connect}}(std::string f);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{36     std::map<std::string, std::string> \mbox{\hyperlink{classbase_a0c844375f5a2f12b5c5c9d9338be2502}{get\_data}}()}
+\DoxyCodeLine{37     \{}
+\DoxyCodeLine{38         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbase_a1af1c56b50837e0b21da61303f22a7c1}{data\_base}};}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{46     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classbase_ae58618cfea251d7b5bad57a15881e5f0}{has\_login}}(\textcolor{keyword}{const} std::string\& login)\textcolor{keyword}{ const}}
+\DoxyCodeLine{47 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{48         \textcolor{keywordflow}{return} \mbox{\hyperlink{classbase_a1af1c56b50837e0b21da61303f22a7c1}{data\_base}}.find(login) != \mbox{\hyperlink{classbase_a1af1c56b50837e0b21da61303f22a7c1}{data\_base}}.end();}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{56     std::string \mbox{\hyperlink{classbase_aae528b1b4a3d38d1959259569c01cfb3}{get\_password}}(\textcolor{keyword}{const} std::string\& login)\textcolor{keyword}{ const}}
+\DoxyCodeLine{57 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{58         \textcolor{keyword}{auto} it = \mbox{\hyperlink{classbase_a1af1c56b50837e0b21da61303f22a7c1}{data\_base}}.find(login);}
+\DoxyCodeLine{59         \textcolor{keywordflow}{if} (it != \mbox{\hyperlink{classbase_a1af1c56b50837e0b21da61303f22a7c1}{data\_base}}.end()) \{}
+\DoxyCodeLine{60             \textcolor{keywordflow}{return} it-\/>second;}
+\DoxyCodeLine{61         \}}
+\DoxyCodeLine{62         \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{63     \}}
+\DoxyCodeLine{64 \};}
+
+\end{DoxyCode}

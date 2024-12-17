@@ -1,0 +1,26 @@
+\hypertarget{log_8h_source}{}\doxysection{log.\+h}
+\mbox{\hyperlink{log_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classlogger}{logger}} \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     std::string \mbox{\hyperlink{classlogger_ad81104a3584301fa1800d1e562bb6b58}{path\_to\_logfile}}; }
+\DoxyCodeLine{16     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlogger_a4a250522f44bf22b7b6ddc81cae948db}{log\_to\_console}}; }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{classlogger_a4f753a510e00c892b38e95c2284363a6}{logger}}(); }
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{classlogger_a4f753a510e00c892b38e95c2284363a6}{logger}}(\textcolor{keyword}{const} std::string\& path, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlogger_a4a250522f44bf22b7b6ddc81cae948db}{log\_to\_console}} = \textcolor{keyword}{false}); }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{int} \mbox{\hyperlink{classlogger_a462eefd036e28b4b507bae6bf79864d4}{set\_path}}(\textcolor{keyword}{const} std::string\& path\_file, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlogger_a4a250522f44bf22b7b6ddc81cae948db}{log\_to\_console}} = \textcolor{keyword}{false});}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{int} \mbox{\hyperlink{classlogger_adb4d3318a3dc17ef2cf4d2fca21e566c}{writelog}}(\textcolor{keyword}{const} std::string\& message);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{48     std::string \mbox{\hyperlink{classlogger_af04d09b3015e2aa00ef7771233a33bf0}{gettime}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{55     std::string \mbox{\hyperlink{classlogger_afa92e606d629dde8b5b71aa0c9afedf5}{get\_path}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{56 \};}
+
+\end{DoxyCode}

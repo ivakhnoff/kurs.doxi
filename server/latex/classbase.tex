@@ -1,0 +1,113 @@
+\hypertarget{classbase}{}\doxysection{Класс base}
+\label{classbase}\index{base@{base}}
+
+
+Класс для чтения базы данных  
+
+
+
+
+{\ttfamily \#include $<$base.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbase_ac48bcfe44d4d71c5110c501559b08fe2}{connect}} (std\+::string f)
+\begin{DoxyCompactList}\small\item\em Установка соединения с базой данных \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classbase_a0c844375f5a2f12b5c5c9d9338be2502}{get\+\_\+data}} ()
+\begin{DoxyCompactList}\small\item\em Получить базу данных \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classbase_ae58618cfea251d7b5bad57a15881e5f0}{has\+\_\+login}} (const std\+::string \&login) const
+\begin{DoxyCompactList}\small\item\em Проверка наличия логина в базе данных \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classbase_aae528b1b4a3d38d1959259569c01cfb3}{get\+\_\+password}} (const std\+::string \&login) const
+\begin{DoxyCompactList}\small\item\em Получение пароля по логину \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classbase_a1af1c56b50837e0b21da61303f22a7c1}\label{classbase_a1af1c56b50837e0b21da61303f22a7c1}} 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries data\+\_\+base}
+\begin{DoxyCompactList}\small\item\em Контейнер \char`\"{}логин+пароль\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для чтения базы данных 
+
+Контейнер data\+\_\+base хранит в себе логин и пароль пользователя. Для получения базы используется метод \mbox{\hyperlink{classbase_a0c844375f5a2f12b5c5c9d9338be2502}{get\+\_\+data()}}. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classbase_ac48bcfe44d4d71c5110c501559b08fe2}\label{classbase_ac48bcfe44d4d71c5110c501559b08fe2}} 
+\index{base@{base}!connect@{connect}}
+\index{connect@{connect}!base@{base}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily void base\+::connect (\begin{DoxyParamCaption}\item[{std\+::string}]{f }\end{DoxyParamCaption})}
+
+
+
+Установка соединения с базой данных 
+
+Читает из файла строку базы данных.
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em f} & Путь к файлу базы данных. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcrit__err}{crit\+\_\+err}}} & Если файл не открывается, либо несоответствие формату строки \char`\"{}логин\+:пароль\char`\"{}. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classbase_a0c844375f5a2f12b5c5c9d9338be2502}\label{classbase_a0c844375f5a2f12b5c5c9d9338be2502}} 
+\index{base@{base}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!base@{base}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, std\+::string $>$ base\+::get\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получить базу данных 
+
+\begin{DoxyReturn}{Возвращает}
+Контейнер с базой данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_aae528b1b4a3d38d1959259569c01cfb3}\label{classbase_aae528b1b4a3d38d1959259569c01cfb3}} 
+\index{base@{base}!get\_password@{get\_password}}
+\index{get\_password@{get\_password}!base@{base}}
+\doxysubsubsection{\texorpdfstring{get\_password()}{get\_password()}}
+{\footnotesize\ttfamily std\+::string base\+::get\+\_\+password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{login }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение пароля по логину 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & Логин. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Пароль, если логин существует, иначе пустая строка. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classbase_ae58618cfea251d7b5bad57a15881e5f0}\label{classbase_ae58618cfea251d7b5bad57a15881e5f0}} 
+\index{base@{base}!has\_login@{has\_login}}
+\index{has\_login@{has\_login}!base@{base}}
+\doxysubsubsection{\texorpdfstring{has\_login()}{has\_login()}}
+{\footnotesize\ttfamily bool base\+::has\+\_\+login (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{login }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Проверка наличия логина в базе данных 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em login} & Логин для проверки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если логин существует, иначе false. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{base_8h}{base.\+h}}\item 
+base.\+cpp\end{DoxyCompactItemize}

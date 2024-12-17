@@ -1,0 +1,76 @@
+\hypertarget{classcalc}{}\doxysection{Класс calc}
+\label{classcalc}\index{calc@{calc}}
+
+
+Класс для вычисления суммы элементов вектора  
+
+
+
+
+{\ttfamily \#include $<$calc.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcalc_aada06e85ce36506fe890cf97f68937a4}{calc}} (std\+::vector$<$ uint32\+\_\+t $>$ chisla)
+\begin{DoxyCompactList}\small\item\em Конструктор для вычисления суммы элементов вектора \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classcalc_a67b3079db1c7d09fbea06fd9a285b967}{send\+\_\+res}} ()
+\begin{DoxyCompactList}\small\item\em Метод для отправки результата \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcalc_aeec25c31fd42bff43761ad62ff6d452b}\label{classcalc_aeec25c31fd42bff43761ad62ff6d452b}} 
+uint32\+\_\+t {\bfseries res}
+\begin{DoxyCompactList}\small\item\em Переменная, в которую будет записан результат \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для вычисления суммы элементов вектора 
+
+Вектор указывается в параметрах конструктора. Для получения результата вычислений используется метод send\+\_\+res. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classcalc_aada06e85ce36506fe890cf97f68937a4}\label{classcalc_aada06e85ce36506fe890cf97f68937a4}} 
+\index{calc@{calc}!calc@{calc}}
+\index{calc@{calc}!calc@{calc}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily calc\+::calc (\begin{DoxyParamCaption}\item[{std\+::vector$<$ uint32\+\_\+t $>$}]{chisla }\end{DoxyParamCaption})}
+
+
+
+Конструктор для вычисления суммы элементов вектора 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em chisla} & Вектор данных. Не должен быть пустым. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classno__crit__err}{no\+\_\+crit\+\_\+err}},если} & вектор пуст. \\
+\hline
+{\em boost\+::numeric\+::positive\+\_\+overflow,если} & происходит переполнение. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classcalc_a67b3079db1c7d09fbea06fd9a285b967}\label{classcalc_a67b3079db1c7d09fbea06fd9a285b967}} 
+\index{calc@{calc}!send\_res@{send\_res}}
+\index{send\_res@{send\_res}!calc@{calc}}
+\doxysubsubsection{\texorpdfstring{send\_res()}{send\_res()}}
+{\footnotesize\ttfamily uint32\+\_\+t calc\+::send\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Метод для отправки результата 
+
+\begin{DoxyReturn}{Возвращает}
+Результат вычислений. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{calc_8h}{calc.\+h}}\item 
+calc.\+cpp\end{DoxyCompactItemize}

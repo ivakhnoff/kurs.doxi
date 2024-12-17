@@ -1,0 +1,151 @@
+\hypertarget{classinterface}{}\doxysection{Класс interface}
+\label{classinterface}\index{interface@{interface}}
+
+
+Класс интерфейса  
+
+
+
+
+{\ttfamily \#include $<$interface.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classinterface_a13e0ee4b9df1714d747d62ec46220c55}\label{classinterface_a13e0ee4b9df1714d747d62ec46220c55}} 
+{\bfseries interface} ()
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classinterface_a34f7f8b2941f6e5b769d45912ea4712c}{parser}} (int argc, const char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Парсер \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinterface_ade465f47f063d47549d9de850892479c}{setup\+\_\+connection}} (const std\+::string \&\mbox{\hyperlink{classinterface_a7ca5a0c11d4a52cd5bcb18445eafc3fb}{basefile}}, const std\+::string \&\mbox{\hyperlink{classinterface_a03986e4b403c49e3dee94068db1d97d6}{logfile}})
+\begin{DoxyCompactList}\small\item\em Установка соединения с базой данных и журналом лога \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classinterface_a78702e23703d9f574adbe71ea93329af}{spravka}} (const boost\+::program\+\_\+options\+::options\+\_\+description \&opts)
+\begin{DoxyCompactList}\small\item\em Справка \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classinterface_ae8e61af0495fdb37d7bb9b2484052175}{get\+\_\+port}} () const
+\begin{DoxyCompactList}\small\item\em Получение порта \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classinterface_af339115ce517c3c8e7a8108f2fecb49c}{get\+\_\+base}} ()
+\begin{DoxyCompactList}\small\item\em Получение пути к базе данных \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classinterface_afc8766959b27aa67bc19e1588476c729}{get\+\_\+log}} ()
+\begin{DoxyCompactList}\small\item\em Получение пути к журналу лога \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classinterface_a13cd710d0eef40b7deed70eebb5e3c3d}\label{classinterface_a13cd710d0eef40b7deed70eebb5e3c3d}} 
+int {\bfseries port}
+\begin{DoxyCompactList}\small\item\em Переменная с номером порта \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinterface_a7ca5a0c11d4a52cd5bcb18445eafc3fb}\label{classinterface_a7ca5a0c11d4a52cd5bcb18445eafc3fb}} 
+string {\bfseries basefile}
+\begin{DoxyCompactList}\small\item\em Путь к файлу базы данных \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classinterface_a03986e4b403c49e3dee94068db1d97d6}\label{classinterface_a03986e4b403c49e3dee94068db1d97d6}} 
+string {\bfseries logfile}
+\begin{DoxyCompactList}\small\item\em Путь к файлу журнала \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс интерфейса 
+
+Получает порт, по умолчанию 33333. Парсер выполняет чтение операндов командной строки. Устанавливается соединение с базой данных и журналом лога. Выполняется вызов справки. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classinterface_af339115ce517c3c8e7a8108f2fecb49c}\label{classinterface_af339115ce517c3c8e7a8108f2fecb49c}} 
+\index{interface@{interface}!get\_base@{get\_base}}
+\index{get\_base@{get\_base}!interface@{interface}}
+\doxysubsubsection{\texorpdfstring{get\_base()}{get\_base()}}
+{\footnotesize\ttfamily std\+::string interface\+::get\+\_\+base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение пути к базе данных 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к базе данных. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinterface_afc8766959b27aa67bc19e1588476c729}\label{classinterface_afc8766959b27aa67bc19e1588476c729}} 
+\index{interface@{interface}!get\_log@{get\_log}}
+\index{get\_log@{get\_log}!interface@{interface}}
+\doxysubsubsection{\texorpdfstring{get\_log()}{get\_log()}}
+{\footnotesize\ttfamily std\+::string interface\+::get\+\_\+log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение пути к журналу лога 
+
+\begin{DoxyReturn}{Возвращает}
+Путь к журналу лога. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinterface_ae8e61af0495fdb37d7bb9b2484052175}\label{classinterface_ae8e61af0495fdb37d7bb9b2484052175}} 
+\index{interface@{interface}!get\_port@{get\_port}}
+\index{get\_port@{get\_port}!interface@{interface}}
+\doxysubsubsection{\texorpdfstring{get\_port()}{get\_port()}}
+{\footnotesize\ttfamily int interface\+::get\+\_\+port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Получение порта 
+
+Этот метод передает значение порта в коммуникатор. \begin{DoxyReturn}{Возвращает}
+Номер порта. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinterface_a34f7f8b2941f6e5b769d45912ea4712c}\label{classinterface_a34f7f8b2941f6e5b769d45912ea4712c}} 
+\index{interface@{interface}!parser@{parser}}
+\index{parser@{parser}!interface@{interface}}
+\doxysubsubsection{\texorpdfstring{parser()}{parser()}}
+{\footnotesize\ttfamily bool interface\+::parser (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Парсер 
+
+Читает операнды командной строки. В случае передачи операнда -\/h производится вызов справки. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em argc} & Количество операндов. \\
+\hline
+\mbox{\texttt{ in}}  & {\em argv} & Значение операндов. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcrit__err}{crit\+\_\+err}}} & в случае передачи некорректного значения порта. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Возвращает}
+true или false в случае корректной или некорректной передачи аргументов. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classinterface_ade465f47f063d47549d9de850892479c}\label{classinterface_ade465f47f063d47549d9de850892479c}} 
+\index{interface@{interface}!setup\_connection@{setup\_connection}}
+\index{setup\_connection@{setup\_connection}!interface@{interface}}
+\doxysubsubsection{\texorpdfstring{setup\_connection()}{setup\_connection()}}
+{\footnotesize\ttfamily void interface\+::setup\+\_\+connection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{basefile,  }\item[{const std\+::string \&}]{logfile }\end{DoxyParamCaption})}
+
+
+
+Установка соединения с базой данных и журналом лога 
+
+Устанавливает соединение с базой данных и журналом лога. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em basefile} & Путь к файлу базы данных. \\
+\hline
+\mbox{\texttt{ in}}  & {\em logfile} & Путь к файлу журнала лога. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classinterface_a78702e23703d9f574adbe71ea93329af}\label{classinterface_a78702e23703d9f574adbe71ea93329af}} 
+\index{interface@{interface}!spravka@{spravka}}
+\index{spravka@{spravka}!interface@{interface}}
+\doxysubsubsection{\texorpdfstring{spravka()}{spravka()}}
+{\footnotesize\ttfamily void interface\+::spravka (\begin{DoxyParamCaption}\item[{const boost\+::program\+\_\+options\+::options\+\_\+description \&}]{opts }\end{DoxyParamCaption})}
+
+
+
+Справка 
+
+Вызов справки. 
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em opts} & Описание опций для справки. \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_8h}{interface.\+h}}\item 
+interface.\+cpp\end{DoxyCompactItemize}

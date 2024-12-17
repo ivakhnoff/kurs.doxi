@@ -1,0 +1,99 @@
+\begin{theindex}
+
+  \item {base}, \hyperpage{7}
+    \subitem {connect}, \hyperpage{7}
+    \subitem {get\_data}, \hyperpage{8}
+    \subitem {get\_password}, \hyperpage{8}
+    \subitem {has\_login}, \hyperpage{8}
+  \item {base.h}, \hyperpage{21}
+
+  \indexspace
+
+  \item {calc}, \hyperpage{9}
+    \subitem {calc}, \hyperpage{9}
+    \subitem {send\_res}, \hyperpage{10}
+  \item {calc.h}, \hyperpage{23}
+  \item {communicator}, \hyperpage{10}
+    \subitem {connection}, \hyperpage{11}
+    \subitem {sha224}, \hyperpage{11}
+  \item {communicator.h}, \hyperpage{24}
+  \item {connect}
+    \subitem {base}, \hyperpage{7}
+  \item {connection}
+    \subitem {communicator}, \hyperpage{11}
+  \item {crit\_err}, \hyperpage{12}
+
+  \indexspace
+
+  \item {error.h}, \hyperpage{25}
+
+  \indexspace
+
+  \item {get\_base}
+    \subitem {interface}, \hyperpage{13}
+  \item {get\_data}
+    \subitem {base}, \hyperpage{8}
+  \item {get\_log}
+    \subitem {interface}, \hyperpage{14}
+  \item {get\_password}
+    \subitem {base}, \hyperpage{8}
+  \item {get\_path}
+    \subitem {logger}, \hyperpage{16}
+  \item {get\_port}
+    \subitem {interface}, \hyperpage{14}
+  \item {gettime}
+    \subitem {logger}, \hyperpage{16}
+
+  \indexspace
+
+  \item {has\_login}
+    \subitem {base}, \hyperpage{8}
+
+  \indexspace
+
+  \item {interface}, \hyperpage{13}
+    \subitem {get\_base}, \hyperpage{13}
+    \subitem {get\_log}, \hyperpage{14}
+    \subitem {get\_port}, \hyperpage{14}
+    \subitem {parser}, \hyperpage{14}
+    \subitem {setup\_connection}, \hyperpage{15}
+    \subitem {spravka}, \hyperpage{15}
+  \item {interface.h}, \hyperpage{27}
+
+  \indexspace
+
+  \item {log.h}, \hyperpage{28}
+  \item {logger}, \hyperpage{16}
+    \subitem {get\_path}, \hyperpage{16}
+    \subitem {gettime}, \hyperpage{16}
+    \subitem {set\_path}, \hyperpage{17}
+    \subitem {writelog}, \hyperpage{17}
+
+  \indexspace
+
+  \item {no\_crit\_err}, \hyperpage{18}
+
+  \indexspace
+
+  \item {parser}
+    \subitem {interface}, \hyperpage{14}
+
+  \indexspace
+
+  \item {send\_res}
+    \subitem {calc}, \hyperpage{10}
+  \item {set\_path}
+    \subitem {logger}, \hyperpage{17}
+  \item {setup\_connection}
+    \subitem {interface}, \hyperpage{15}
+  \item {sha224}
+    \subitem {communicator}, \hyperpage{11}
+  \item {spravka}
+    \subitem {interface}, \hyperpage{15}
+
+  \indexspace
+
+  \item {writelog}
+    \subitem {logger}, \hyperpage{17}
+
+\end{theindex}
